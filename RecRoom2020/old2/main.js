@@ -14,7 +14,7 @@ function UpdateVideos() {
 
     titleele1 = div1.getElementsByTagName("h1")[0]
     titleele2 = div2.getElementsByTagName("h1")[0]
-    titleele3 = div3.getElementsByTagName("h1")[0]
+    titleele3 = div2.getElementsByTagName("h1")[0]
 
     videoele1 = div1.getElementsByTagName("video")[0]
     videoele2 = div2.getElementsByTagName("video")[0]
@@ -30,7 +30,7 @@ function UpdateVideos() {
 }
 
 function GetVideos() {
-    f = fetch("https://ogfishiesyt.github.io/RR2020.github.io/CommunityBoard.json",).then((a)=>{a.json().then((response) => {
+    f = fetch("https://ogfishiesyt.github.io/RR2020.github.io/CommunityBoard.json").then((a)=>{a.json().then((response) => {
         video1 = response.Videos[0].BlobName
         video2 = response.Videos[1].BlobName
         video3 = response.Videos[2].BlobName
